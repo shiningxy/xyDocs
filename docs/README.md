@@ -1,3 +1,3 @@
-# Headline
+# Datawhale组队学习记录
 
-> An awesome project.
+> 记录香芋在DataWhale组队学习的学习笔记，会将过去组队学习的笔记更新到本页面，持续更新中。
