@@ -323,10 +323,10 @@ Mitsuku 作为一个高度可定制的聊天机器人，它能够与人类进行
 ### Exercise 2
 
 :question:  **Question 2:**
-让我们来看看各种真空吸尘器智能体函数的合理性。
+让我们来看看各种吸尘器智能体函数的合理性。
 <img src="https://docs-xy.oss-cn-shanghai.aliyuncs.com/aima2-3.png" alt="2-3" style="width:85%">
 
-1. 表明图 2.3 中描述的简单真空吸尘器智能体函数在页面中列出的假设下确实是合理的
+1. 表明图 2.3 中描述的简单吸尘器智能体函数在页面中列出的假设下确实是合理的
 2. 描述一个理性智能体函数，说明每次运动成本一个点的情况。相应的智能体程序是否需要内部状态？
 3. 讨论清洁方块可能变脏且环境地理未知的可能智能体设计。在这些情况下，智能体从其经验中学习是否有意义？如果是这样，它应该学习什么？如果没有，为什么不呢？
 > Let us examine the rationality of various vacuum-cleaner agent functions.
@@ -335,7 +335,7 @@ Mitsuku 作为一个高度可定制的聊天机器人，它能够与人类进行
 > 3. Discuss possible agent designs for the cases in which clean squares can become dirty and the geography of the environment is unknown. Does it make sense for the agent to learn from its experience in these cases? If so, what should it learn? If not, why not?
 
 :exclamation: **Answer 2:**
-1. 一个只有两个方格的真空吸尘器世界，当A格干净时，向右移动到B格，当B格干净时，向左移动到A格。当所处的格子脏时，进行吸尘。这个智能体函数是合理的，因为它能够保证每个格子都被清洁，而且不会重复清洁。这个智能体函数的性能度量是：每个格子被清洁一次消耗一个点，每次移动消耗一个点。这个智能体函数的性能度量是可知的，因此可以通过学习来优化。
+1. 一个只有两个方格的吸尘器世界，当A格干净时，向右移动到B格，当B格干净时，向左移动到A格。当所处的格子脏时，进行吸尘。这个智能体函数是合理的，因为它能够保证每个格子都被清洁，而且不会重复清洁。这个智能体函数的性能度量是：每个格子被清洁一次消耗一个点，每次移动消耗一个点。这个智能体函数的性能度量是可知的，因此可以通过学习来优化。
 2. 首先，智能体程序和智能体函数不同，智能体程序将当前的感知作为输入，智能体函数可能以来整个感知历史，需要将两个概念区分开来。对于智能体程序，它需要内部状态，因为它需要记录当前所处的格子，以便在下一次感知时，知道它应该向哪个方向移动。对于智能体函数，它不需要内部状态，因为它只需要知道当前所处的格子，而不需要知道它之前所处的格子。
 3. 当方块可能变脏时，从经验中学习时有意义的。因为它可以从经验中学习哪些方块可能会在什么时候有多大的概率变脏。它应该学习的是，当它清洁了一个方块时，它应该记录下这个方块的清洁时间，当它再次清洁这个方块时，如果这个方块的清洁时间距离上次清洁时间很近，那么它应该认为这个方块很可能会变脏。但是，当环境地理未知时，从经验中学习是没有意义的。因为它不知道它所处的格子是哪个格子，所以它无法从经验中学习哪些方块可能会在什么时候有多大的概率变脏。
 
@@ -521,7 +521,7 @@ Same to Answer 5
 ```
 
 ---
-> 以下练习都涉及真空吸尘器世界的环境和智能体的实现。
+> 以下练习都涉及吸尘器世界的环境和智能体的实现。
 > 
 > The following exercises all concern the implementation of environments and agents for the vacuum-cleaner world.
 
@@ -539,7 +539,7 @@ Same to Answer 5
 
 ### Exercise 11
 :question: **Question 11:**
-为图 2.8 中描述并在页面中指定的真空吸尘器世界实现性能测量环境模拟器。您的实现应该是模块化的，以便可以轻松更改传感器、执行器和环境特征（尺寸、形状、污垢放置等）。（注意：对于某些编程语言和操作系统的选择，在线代码存储库中已经有实现）
+为图 2.8 中描述并在页面中指定的吸尘器世界实现性能测量环境模拟器。您的实现应该是模块化的，以便可以轻松更改传感器、执行器和环境特征（尺寸、形状、污垢放置等）。（注意：对于某些编程语言和操作系统的选择，在线代码存储库中已经有实现）
 > Implement a performance-measuring environment simulator for the vacuum-cleaner world depicted in Figure 2.8 and specified on page . Your implementation should be modular so that the sensors, actuators, and environment characteristics (size, shape, dirt placement, etc.) can be changed easily. (Note: for some choices of programming language and operating system there are already implementations in the online code repository.)
 
 <img src="https://docs-xy.oss-cn-shanghai.aliyuncs.com/aima2-8.png" alt="2-8" style="width:100%">
@@ -578,109 +578,10 @@ def ReflexVacuumAgent():
 > Implement a simple reflex agent for the vacuum environment in Exercise vacuum-start-exercise. Run the environment with this agent for all possible initial dirt configurations and agent locations. Record the performance score for each configuration and the overall average score.
 
 :exclamation: **Answer 12:**
+
+代码示例来源：https://github.com/aimacode/aima-python/blob/master/agents.py
+
 ```python
-class Environment:
-    """Abstract class representing an Environment. 'Real' Environment classes
-    inherit from this. Your Environment will typically need to implement:
-        percept:           Define the percept that an agent sees.
-        execute_action:    Define the effects of executing an action.
-                           Also update the agent.performance slot.
-    The environment keeps a list of .things and .agents (which is a subset
-    of .things). Each agent has a .performance slot, initialized to 0.
-    Each thing has a .location slot, even though some environments may not
-    need this."""
-
-    def __init__(self):
-        self.things = []
-        self.agents = []
-
-    def thing_classes(self):
-        return []  # List of classes that can go into environment
-
-    def percept(self, agent):
-        """Return the percept that the agent sees at this point. (Implement this.)"""
-        raise NotImplementedError
-
-    def execute_action(self, agent, action):
-        """Change the world to reflect this action. (Implement this.)"""
-        raise NotImplementedError
-
-    def default_location(self, thing):
-        """Default location to place a new thing with unspecified location."""
-        return None
-
-    def exogenous_change(self):
-        """If there is spontaneous change in the world, override this."""
-        pass
-
-    def is_done(self):
-        """By default, we're done when we can't find a live agent."""
-        return not any(agent.is_alive() for agent in self.agents)
-
-    def step(self):
-        """Run the environment for one time step. If the
-        actions and exogenous changes are independent, this method will
-        do. If there are interactions between them, you'll need to
-        override this method."""
-        if not self.is_done():
-            actions = []
-            for agent in self.agents:
-                if agent.alive:
-                    actions.append(agent.program(self.percept(agent)))
-                else:
-                    actions.append("")
-            for (agent, action) in zip(self.agents, actions):
-                self.execute_action(agent, action)
-            self.exogenous_change()
-
-    def run(self, steps=1000):
-        """Run the Environment for given number of time steps."""
-        for step in range(steps):
-            if self.is_done():
-                return
-            self.step()
-
-    def list_things_at(self, location, tclass=Thing):
-        """Return all things exactly at a given location."""
-        if isinstance(location, numbers.Number):
-            return [thing for thing in self.things
-                    if thing.location == location and isinstance(thing, tclass)]
-        return [thing for thing in self.things
-                if all(x == y for x, y in zip(thing.location, location)) and isinstance(thing, tclass)]
-
-    def some_things_at(self, location, tclass=Thing):
-        """Return true if at least one of the things at location
-        is an instance of class tclass (or a subclass)."""
-        return self.list_things_at(location, tclass) != []
-
-    def add_thing(self, thing, location=None):
-        """Add a thing to the environment, setting its location. For
-        convenience, if thing is an agent program we make a new agent
-        for it. (Shouldn't need to override this.)"""
-        if not isinstance(thing, Thing):
-            thing = Agent(thing)
-        if thing in self.things:
-            print("Can't add the same thing twice")
-        else:
-            thing.location = location if location is not None else self.default_location(thing)
-            self.things.append(thing)
-            if isinstance(thing, Agent):
-                thing.performance = 0
-                self.agents.append(thing)
-
-    def delete_thing(self, thing):
-        """Remove a thing from the environment."""
-        try:
-            self.things.remove(thing)
-        except ValueError as e:
-            print(e)
-            print("  in Environment delete_thing")
-            print("  Thing to be removed: {} at {}".format(thing, thing.location))
-            print("  from list: {}".format([(thing, thing.location) for thing in self.things]))
-        if thing in self.agents:
-            self.agents.remove(thing)
-
-
 class TrivialVacuumEnvironment(Environment):
     """This environment has two locations, A and B. Each can be Dirty
     or Clean. The agent perceives its location and the location's
@@ -717,3 +618,73 @@ class TrivialVacuumEnvironment(Environment):
         """Agents start in either location at random."""
         return random.choice([loc_A, loc_B])
 ```
+
+---
+
+### Exercise 13
+
+:question: **Question 13:**
+考虑练习 2.10 中吸尘器环境的修改版本，其中智能体每移动一个动作就会被惩罚一分。
+1. 对于这种环境，一个简单的反射智能体可以完全合理吗？解释。
+2. 有状态的反射智能体呢？设计这样的智能体。
+3. 如果智能体的感知赋予环境中每个方块的干净/肮脏状态，您对 1 和 2 的答案会如何变化？
+> Consider a modified version of the vacuum environment in Exercise 2.10, in which the agent is penalized one point for each movement.
+> 1. Can a simple reflex agent be perfectly rational for this environment? Explain.
+> 2. What about a reflex agent with state? Design such an agent.
+> 3. How do your answers to 1 and 2 change if the agent’s percepts give it the clean/dirty status of every square in the environment?
+
+:exclamation: **Answer 13:**
+1. 不完全合理，因为它只能根据当前状态执行动作，这可能会导致智能体陷入无限循环或选择不优秀的策略。
+2. 有状态的反射智能体可以考虑环境中的惩罚因素。例如，智能体可以在移动之前先扫描周围的区域，确定哪些区域需要清洁，并确定最优策略。
+3. 如果智能体的感知能够提供环境中每个方块的干净/肮脏状态，这会使 1 和 2 的答案变得更合理。智能体可以根据干净/肮脏状态来优化其策略，并在不需要清洁的区域中省略移动操作。
+
+---
+
+### Exercise 14
+
+:question: **Question 14:**
+考虑练习 2.10 中吸尘器环境的修改版本，其中环境的地理范围（范围、边界和障碍物）是未知的，初始污垢配置也是如此。（代理可以上下以及左右移动。
+1. 对于这种环境，一个简单的反射智能体可以完全合理吗？解释。
+2. 具有随机智能体函数的简单反射智能体能否优于单纯反射智能体？设计此类智能体并测量其在多个环境中的性能。
+3. 你能设计一个随机智能体表现不佳的环境吗？显示您的结果。
+4. 有状态的智能体能胜过单纯的智能体吗？设计此类智能体并测量其在多个环境中的性能。你能设计出这种类型的理性智能体吗？
+> Consider a modified version of the vacuum environment in Exercise 2.10, in which the geography of the environment—its extent, boundaries, and obstacles—is unknown, as is the initial dirt configuration. (The agent can go Up and Down as well as Left and Right.)
+> 1. Can a simple reflex agent be perfectly rational for this environment? Explain.
+> 2. Can a simple reflex agent with a randomized agent function outperform a simple reflex agent? Design such an agent and measure its performance on several environments.
+> 3. Can you design an environment in which your randomized agent will perform poorly? Show your results.
+> 4. Can a reflex agent with state outperform a simple reflex agent? Design such an agent and measure its performance on several environments. Can you design a rational agent of this type?
+
+:exclamation: **Answer 14:**
+1. 一个简单的反射智能体在这种环境中不能完全合理，因为地理范围和初始污垢配置是未知的。智能体不能根据这些信息来优化其策略，因此可能会陷入无限循环或者不能清洁整个环境
+2. 具有随机智能体函数的简单反射智能体可能会优于单纯反射智能体。这种智能体可以在不知道地理范围和初始污垢配置的情况下，通过随机移动来探索环境，并且在发现污垢时执行清洁动作。为了测量其在多个环境中的性能，需要进行大量的实验并统计数据。
+3. 可以通过设计一个环境，其中障碍物和污垢都很密集，并且环境中没有明显的规律来让随机智能体表现不佳。在这样的环境中，随机智能体可能会花费大量时间来探索环境，而不能有效地清洁环境。
+4. 有状态的智能体可能会胜过单纯的智能体。这种智能体可以根据之前的经验来优化其策略并使用最优策略来清洁环境。为了设计这样的智能体并测量其在多个环境中的性能，可以使用机器学习算法，如 Q-learning 或 SARSA。这样的智能体可以通过不断学习和改进来达到理性的行为。
+
+---
+
+### Exercise 15
+
+:question: **Question 15:**
+
+对于将位置传感器替换为“碰撞”传感器的情况，重复练习 2.13，该传感器检测智能体试图进入障碍物或越过环境边界的情况。假设碰撞传感器停止工作；智能体应该如何表现？
+> Repeat Exercise 2.13 for the case in which the location sensor is replaced with a “bump” sensor that detects the agent’s attempts to move into an obstacle or to cross the boundaries of the environment. Suppose the bump sensor stops working; how should the agent behave?
+
+:exclamation: **Answer 15:**
+如果碰撞传感器停止工作，智能体将无法感知到它试图进入障碍物或越过环境边界的情况。这可能会导致智能体在环境中陷入死循环或者不能清洁整个环境，因为它不能知道自己在哪里和它试图移动的方向是否正确。
+
+在这种情况下，如果智能体不能感知到它试图进入障碍物或越过环境边界的情况，那么它将无法避免这种情况，并可能越出环境、在环境中陷入死循环或者不能清洁整个环境。
+
+---
+
+### Exercise 16
+:question: **Question 16:**
+前面练习中的传感器环境都是确定性的。讨论以下每个随机版本的可能智能体程序：
+1.墨菲定律：百分之二十五的情况下，如果地板脏了，吸尘动作无法清洁地板，如果地板干净，则灰尘沉积在地板上。如果污垢传感器在 10% 的时间内给出错误的答案，您的智能体程序会受到怎样的影响？
+2.小孩子：在每个时间步长，每个干净的方块都有10%的几率变脏。你能为这个案例想出一个合理的智能体设计吗？
+> The vacuum environments in the preceding exercises have all been deterministic. Discuss possible agent programs for each of the following stochastic versions:
+> 1. Murphy’s law: twenty-five percent of the time, the Suck action fails to clean the floor if it is dirty and deposits dirt onto the floor if the floor is clean. How is your agent program affected if the dirt sensor gives the wrong answer 10% of the time?
+> 2. Small children: At each time step, each clean square has a 10% chance of becoming dirty. Can you come up with a rational agent design for this case?
+
+:exclamation: **Answer 16:**
+1. 如果污垢传感器在 10% 的时间内给出错误的答案,在这种情况下，程序可能会在地板干净的情况下进行吸尘动作。或者，程序可能会在地板脏的情况下不进行吸尘动作，导致地板不能得到清洁。为了解决这个问题，可能需要引入额外的传感器来确认地板的清洁状态，或者采用一种更加灵活的策略来应对随机性。
+2. 对于这个随机版本的案例，可以考虑使用一种基于频率的清洁策略。例如，智能体程序可以在一定的时间间隔内对整个环境进行清洁，而不是等待地板变脏再进行清洁。这样可以最大限度地降低地板变脏的可能性，从而提高清洁效率。
