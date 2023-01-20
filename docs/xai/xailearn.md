@@ -211,8 +211,6 @@ result = overlay_mask(img_pil, Image.fromarray(activation_map), alpha=0.7)
     <img src="https://docs-xy.oss-cn-shanghai.aliyuncs.com/xai06.jfif" style="width:50%">
 </div>
 
-值得关注的torchcam中的函数
-
 > torchcam.utils.overlay_mask(img: Image, mask: Image, colormap: str = 'jet', alpha: float = 0.7) → Image [[source]](https://frgfm.github.io/torch-cam/_modules/torchcam/utils.html#overlay_mask)
 > ```python
 > from PIL import Image
