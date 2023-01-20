@@ -8,4 +8,4 @@
 
 
 [GitHub](https://github.com/shiningxy)
-[Get Started](/)
+[Get Started](/aima/aimachap1.md)
