@@ -1,4 +1,11 @@
 # XAI - Datawhale
+
+* 可解释机器学习论文集：https://readpaper.com/user/collect/638623946528292864
+* github repo：https://github.com/TommyZihao/zihao_course/tree/main/XAI
+* SHAP官方文档：https://shap.readthedocs.io/en/latest/index.html
+* LIME github repo：https://github.com/marcotcr/lime
+
+
 ## Task01 先导
 
 **XAI(eXplainable Artificial Intelligence) 可解释人工智能**，力求解释深度学习的核心算法。基于深度学习人工智能的核心算法都源于黑盒模型，其生成结果在本质上是不可解释的，因此难以获得用户的信任。尤其是在风险大的应用场景，如医疗诊断、金融监管和自动驾驶。所以发展可解释人工智能(XAI)极为重要且紧迫。
@@ -234,7 +241,8 @@ result = overlay_mask(img_pil, Image.fromarray(activation_map), alpha=0.7)
 >  - ValueError – when the alpha argument has an incorrect value
 >
 
-## Task06 LIME
+
+## Task 06 LIME
 
 ### LIME的基本假设
 
@@ -273,3 +281,9 @@ $x'\in \{0, 1\}^{d'}$ 可解释模型训练用到的特征，$d'$维0-1向量
 不可信度计算公式：
 
 ![不可信度计算公式](https://docs-xy.oss-cn-shanghai.aliyuncs.com/xai09.png)
+
+## Task 07 LIME Shap代码实战
+
+LIME : https://github.com/marcotcr/lime#tutorials-and-api
+
+SHAP : https://shap.readthedocs.io/en/latest/example_notebooks/overviews/An%20introduction%20to%20explainable%20AI%20with%20Shapley%20values.html
