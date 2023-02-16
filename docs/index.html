@@ -23,48 +23,72 @@
                 errorText  : 'Error',
                 successText: 'Copied'
             },
+            progress: {
+                position: "top",
+                color: "var(--theme-color,#42b983)",
+                height: "3px",
+            },
             loadSidebar: true,
-            coverpage: true,
-            onlyCover: true,
-            maxLevel: 3,
-            subMaxLevel: 3,
-            // sidebarDisplayLevel: 2, // set sidebar display level
-            // hideOtherSidebarContent: true, // whether or not to hide other sidebar content
+            auto2top: true,
+            alias: {
+                '/.*/_sidebar.md': '/_sidebar.md'
+            },
+            themeColor: "#42b983", // this is the default 'vue' color
+            darkMode: {
+                dark: {
+                    background: "#1c2022",
+                    toggleBtnBg: "#34495e",
+                    textColor: "#e2e2e2"
+                },
+                light: {
+                    background: "white",
+                    toggleBtnBg: "var(--theme-color)",
+                    textColor: "#var(--theme-color)"
+                },
+            },
+            pagination: {
+                previousText: '上一章节',
+                nextText: '下一章节',
+            },
+            search: 'auto', // default
+            search: {      
+                placeholder: {
+                    '/': '搜索',
+                },
+                // Localization
+                noData: {
+                    '/': '找不到结果',
+                },
+            },
+            sidebarDisplayLevel: 0,
+            subMaxLevel: 0,
+            hideOtherSidebarContent: true,
             name: '香芋学习笔记',
             repo: 'https://github.com/shiningxy',
-            search: {
-                noData: {
-                    '/': '没有找到结果'
+            count:{
+                countable: true,
+                position: 'top',
+                margin: '10px',
+                float: 'top',
+                fontsize:'0.9em',
+                color:'rgb(90,90,90)',
+                language:'chinese',
+                localization: {
+                    words: "",
+                    minute: ""
                 },
-                paths: 'auto',
-                placeholder: {
-                    '/': '搜索'
-                }
+                isExpected: true
             },
-            // count:{
-            //     countable: true,
-            //     position: 'top',
-            //     margin: '10px',
-            //     float: 'right',
-            //     fontsize:'0.9em',
-            //     color:'rgb(90,90,90)',
-            //     language:'chinese',
-            //     localization: {
-            //         words: "",
-            //         minute: ""
-            //     },
-            //     isExpected: true
-            // },
-            // 'flexible-alerts': {
-            //     style: 'flat'
-            //     }
+            'flexible-alerts': {
+                style: 'flat'
+                }
         }
     </script>
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-    <!-- dark mode
+    <!-- dark mode -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/style.min.css" />
-    <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script> -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-dark-mode@latest/dist/index.min.js"></script>
     <!-- Support for Katex -->
     <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
@@ -79,16 +103,13 @@
     <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
     <!-- 字数插件 -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script> -->
-    <!-- codeblock-iframe -->
-    <!-- <script src="//cdn.jsdelivr.net/npm/codeblock-iframe@latest/dist/index.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-codeblock-iframe@latest/dist/index.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script> 
     <!-- alert [!ATTENTION] [!WARNING] [!TIP] [!NOTE]-->
-    <!-- <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script> -->
+    <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
     <!-- sidebar collapse -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" />
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse@latest/dist/docsify-sidebar-collapse.min.js"></script>
+    <!-- progress -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
 
 </body>
-
 </html>
