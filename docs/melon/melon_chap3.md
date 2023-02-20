@@ -45,5 +45,4 @@ $$b = \frac{1}{m}\sum_{i=1}^{m}(y_i-\omega x_i)$$
 
 其中，$\bar{x}=\frac{1}{m}\sum_{i=1}^{m}x_i$ 为 $x$的均值
 
-
-
+> $E_{\omega,b}$ 是关于$\omega$和$b$的凸函数，当它关于$\omega$和$b$的导数均为0时，得到$\omega$和$b$的最优解
