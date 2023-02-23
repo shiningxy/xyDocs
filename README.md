@@ -7,6 +7,7 @@ https://shiningxy.github.io/xyDocs/
 * [第46期吃瓜教程 202302 西瓜书](/melon/README.md)
     * [第一章](/melon/melon_chap1.md)
     * [第二章](/melon/melon_chap2.md)
+    * [第三章](/melon/melon_chap3.md)
 * [第44期可解释机器学习](/xai/xailearn)
     * [Task01](/xai/xai_task01.md)
     * [Task02](/xai/xai_task02.md)
