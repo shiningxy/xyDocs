@@ -24,3 +24,4 @@
     * [第一章](/melon/melon_chap1.md)
     * [第二章](/melon/melon_chap2.md)
     * [第三章](/melon/melon_chap3.md)
+    * [第四章](/melon/melon_chap4.md)
