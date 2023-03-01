@@ -26,6 +26,7 @@
     * [第三章](/melon/melon_chap3.md)
     * [第四章](/melon/melon_chap4.md)
     * [第五章](/melon/melon_chap5.md)
+    * [第六章](/melon/melon_chap6.md)
 * [重学语言](/coding/README.md)
     * [Python](/coding/py/README.md)
     * [C++](/coding/cpp/README.md)
