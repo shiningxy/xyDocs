@@ -10,6 +10,7 @@ https://shiningxy.github.io/xyDocs/
     * [第三章](/melon/melon_chap3.md)
     * [第四章](/melon/melon_chap4.md)
     * [第五章](/melon/melon_chap5.md)
+    * [第六章](/melon/melon_chap6.md)
 * [第44期可解释机器学习](/xai/xailearn)
     * [Task01](/xai/xai_task01.md)
     * [Task02](/xai/xai_task02.md)
