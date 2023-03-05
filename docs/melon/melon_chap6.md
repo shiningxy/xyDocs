@@ -1,5 +1,5 @@
 # Task05 详读西瓜书+南瓜书第6章
-> 占个链接，加班严重，忙完后补
+
 > 
 > refer : https://github.com/Relph1119/my-team-learning/blob/master/docs/pumpkin_learning27/task05.md
 ## 1 间隔与支持向量
