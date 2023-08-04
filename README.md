@@ -1,7 +1,5 @@
 # xyDocs
 
-https://shiningxy.github.io/xyDocs/
-
 https://www.aishipping.cn
 
 ## Table of Content
