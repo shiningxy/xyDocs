@@ -1,9 +1,5 @@
 ## 第一章 概述
 
-### 思维导图
-
-![RL思维导图](https://docs-xy.oss-cn-shanghai.aliyuncs.com/rl01.png)
-
 
 ### 关键词概念
 

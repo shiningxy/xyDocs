@@ -65,7 +65,7 @@ $$\ln y=\omega^T \mathbf{x} + b$$
 
 这就是对数线性回归，它实际上时在试图让$e^{\omega^T \mathbf{x}+b}$逼近$y$，上式在形式上仍是线性回归，但实质上已是在求取输入空间到输出空间的非线性函数映射，这里的对数函数起到了将线性回归模型的预测值与真实标记联系起来的作用。
 
-![对数线性回归](https://docs-xy.oss-cn-shanghai.aliyuncs.com/%E5%AF%B9%E6%95%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
+<!-- ![对数线性回归](https://docs-xy.oss-cn-shanghai.aliyuncs.com/%E5%AF%B9%E6%95%B0%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%E7%A4%BA%E6%84%8F%E5%9B%BE.png) -->
 
 
 > 考虑单调可微函数$g(\cdot)$令$y=g^{-1}(\omega^T \mathbf{x} + b)$,就得到了广义线性模型，其中函数$g(\cdot)$称为联系函数。
@@ -76,7 +76,7 @@ $$\ln y=\omega^T \mathbf{x} + b$$
 
 二分类任务，最理想的方法是使用单位阶跃函数，若预测值$z$大于0则判为正例，小于0为负例，预测值为临界值零则可以任意判别。如下图像为单位阶跃函数与对数几率函数
 
-![单位阶跃函数](https://docs-xy.oss-cn-shanghai.aliyuncs.com/%E5%8D%95%E4%BD%8D%E9%98%B6%E8%B7%83%E5%87%BD%E6%95%B0.png)
+<!-- ![单位阶跃函数](https://docs-xy.oss-cn-shanghai.aliyuncs.com/%E5%8D%95%E4%BD%8D%E9%98%B6%E8%B7%83%E5%87%BD%E6%95%B0.png) -->
 
 图中的阶跃函数并不连续，不能直接使用，所以使用对数几率函数作为替代函数：
 
@@ -92,7 +92,7 @@ $$y=\frac{1}{1+e^{-z}}$$
 
 LDA的思想：给定训练样例集，设法将阳历投影到一条直线上，使得同类样例的投影点尽可能接近、异类样例的投影点尽可能远离；在对新样本进行分类时，将其投影到同样的这条直线上，再根据投影点的位置来确定新样本的类别。
 
-![LDA](https://docs-xy.oss-cn-shanghai.aliyuncs.com/LDA.png)
+<!-- ![LDA](https://docs-xy.oss-cn-shanghai.aliyuncs.com/LDA.png) -->
 
 欲使同类阳历的投影点尽可能接近，可以让同类样例投影点的协方差尽可能小，即$\omega^T\sum_{0}\omega + \omega^T\sum_{1}\omega$尽可能小；欲使异类样例的投影点尽可能远离，可以让类中心之间的距离尽可能大，即$\lVert \omega^T \mu_0 - \omega^T \mu_1 \rVert_2^2$尽可能大，同时考虑二者，则得到欲最大化的目标：
 

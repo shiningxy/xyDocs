@@ -126,7 +126,7 @@ $C4.5$决策树算法中采用的机制是：采用二分法(bi-partition)对连
 
 多变量决策树能实现如下图所示的**斜划分**，划分边界如灰色（书中红色）线段所示。
 
-![决策树对复杂分类边界的分段近似](https://docs-xy.oss-cn-shanghai.aliyuncs.com/mdt.png)
+<!-- ![决策树对复杂分类边界的分段近似](https://docs-xy.oss-cn-shanghai.aliyuncs.com/mdt.png) -->
 
 此类决策树中，非叶结点是一个形如$\sum_{i=1}^{d}\omega_i a_i = t$的线性分类器，其中$\omega_i$是属性$a_i$的权重，$\omega_i$和$t$可在该结点所含的样本集和属性集上学得。多变量决策树不是为每个非叶节点寻找一个最优划分属性，而是试图建立一个合适的线性分类器。
 
