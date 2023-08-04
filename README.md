@@ -2,6 +2,8 @@
 
 https://shiningxy.github.io/xyDocs/
 
+https://www.aishipping.cn
+
 ## Table of Content
 
 * [第46期吃瓜教程 202302 西瓜书](/melon/README.md)
