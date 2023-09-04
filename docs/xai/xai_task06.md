@@ -20,7 +20,6 @@ $x'\in \{0, 1\}^{d'}$ 可解释模型训练用到的特征，$d'$维0-1向量
 
 ### LIME公式
 
-![LIME公式](https://docs-xy.oss-cn-shanghai.aliyuncs.com/xai07.png)
 
 ### 得到可解释模型的步骤
 
@@ -28,12 +27,8 @@ $x'\in \{0, 1\}^{d'}$ 可解释模型训练用到的特征，$d'$维0-1向量
 
 输入d维特征，输出原模型预测结果。通过可解释模型g中的权重，分析哪些特征对模型的预测提供了较大的贡献
 
-![步骤](https://docs-xy.oss-cn-shanghai.aliyuncs.com/xai08.png)
 
 ### Sparese Linear Explanations
 
 使用$\pi_x(z) = exp(-D(x,z)^2/\sigma^2)$高斯核为半径，待测样本为中心画圆，计算距离来表示局部不可信度。距离越远，局部不可信度越大。
 
-不可信度计算公式：
-
-![不可信度计算公式](https://docs-xy.oss-cn-shanghai.aliyuncs.com/xai09.png)

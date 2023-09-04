@@ -11,7 +11,6 @@ CAM的可视化主要试用【torchcam】，notebook中的安装代码：
 
 #### 图像中只有一个类别时
 
-![一个类别](https://docs-xy.oss-cn-shanghai.aliyuncs.com/xai02.jpg)
 
 #### 图像中含有两个类别时
 <div style="display:flex">

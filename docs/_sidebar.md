@@ -17,7 +17,7 @@
     * [Task06](/xai/xai_task06.md)
     * [Task07](/xai/xai_task07.md)
 * [第45期《人工智能：现代方法》共读](/aima/README.md)
-    * [第一章](/aima/aimanote.md)
+    * [第一章](/aima/aimanote_chap1.md)
     * [第二章](/aima/aimanote_chap2.md)
     * [第三章](/aima/aimanote_chap3.md)
 * [第46期吃瓜教程 202302 西瓜书](/melon/README.md)
