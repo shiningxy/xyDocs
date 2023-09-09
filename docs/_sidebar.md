@@ -1,6 +1,6 @@
 <!-- docs/_sidebar.md -->
 
-<!-- * [Home](/) -->
+* [Home](/)
 * [第40期EasyRL强化学习 蘑菇书](/rl/easyrl)
     * [第一章](/rl/rl_task01.md)
     * [第二章](/rl/rl_task02.md)
@@ -27,6 +27,3 @@
     * [第四章](/melon/melon_chap4.md)
     * [第五章](/melon/melon_chap5.md)
     * [第六章](/melon/melon_chap6.md)
-* [重学语言](/coding/README.md)
-    * [Python](/coding/py/README.md)
-    * [C++](/coding/cpp/README.md)
