@@ -2,7 +2,8 @@
 
 > 香芋在DataWhale组队学习的学习笔记，持续更新中。笔记有任何错误，恳请进行批评指正
 
-
+* [第50期视觉SLAM Smoothly-vslam](/vslam/smoothly-vslam.md)
+    * [第一章](/vslam/chap01.md)
 * [第46期吃瓜教程 202302 西瓜书](/melon/README.md)
     * [第一章](/melon/melon_chap1.md)
     * [第二章](/melon/melon_chap2.md)
