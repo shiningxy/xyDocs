@@ -13,3 +13,9 @@
 英文版官方书籍PDF：https://drive.google.com/file/d/137KFeICM-Wrou6hpI3OxU-l-l-wky103/view?usp=sharing
 
 中文版前三章PDF: https://drive.google.com/file/d/1-2uujQLbz7kBTk2xlpvoAgcJUAzkXmzf/view?usp=sharing
+
+
+* [第45期《人工智能：现代方法》共读](/aima/README.md)
+    * [第一章](/aima/aimanote_chap1.md)
+    * [第二章](/aima/aimanote_chap2.md)
+    * [第三章](/aima/aimanote_chap3.md)

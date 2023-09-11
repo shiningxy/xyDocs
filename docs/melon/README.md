@@ -32,3 +32,12 @@
 | $sup(\cdot)$ | 上确界 |
 | $\mathbb{I}(\cdot)$ | 指示函数，在$\cdot$为真和假时分别取值为1, 0 |
 | $sign(\cdot)$ | 符号函数，在$\cdot<0,=0,>0$时分别取值为-1, 0, 1 |
+
+
+* [第46期吃瓜教程 202302 西瓜书](/melon/README.md)
+    * [第一章](/melon/melon_chap1.md)
+    * [第二章](/melon/melon_chap2.md)
+    * [第三章](/melon/melon_chap3.md)
+    * [第四章](/melon/melon_chap4.md)
+    * [第五章](/melon/melon_chap5.md)
+    * [第六章](/melon/melon_chap6.md)
