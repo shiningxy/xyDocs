@@ -112,5 +112,22 @@ for image in images:
 
 # 销毁所有打开的窗口
 cv2.destroyAllWindows()
-
 ```
+
+### 代码运行结果
+
+原始图像
+
+![example_image](https://docs-xy.oss-cn-shanghai.aliyuncs.com/vslam-chapter1/example.jpg)
+
+---
+
+灰度图像
+
+![gray_example_image](https://docs-xy.oss-cn-shanghai.aliyuncs.com/vslam-chapter1/gray_example.jpg)
+
+---
+
+标定后图像
+
+![calibrated_example_image](https://docs-xy.oss-cn-shanghai.aliyuncs.com/vslam-chapter1/calibrated_example.jpg)
