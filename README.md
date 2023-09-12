@@ -2,7 +2,11 @@
 
 https://www.aishipping.cn
 
-## Table of Content
+# Datawhale组队学习记录
+
+> 香芋在DataWhale组队学习的学习笔记，持续更新中。笔记有任何错误，恳请进行批评指正
+> 
+> 先前所有图片存储在阿里云OSS，Bucket被清空，导致40期至46期暂无图片，后续会补齐（哭）
 
 * [第50期视觉SLAM Smoothly-vslam](/vslam/smoothly-vslam.md)
     * [第一章](/vslam/chap01.md)

@@ -2,7 +2,7 @@
 
 1943年，[McCulloch and Pitts, 1943]将神经元抽象为简单模型，这就是一直沿用至今的“M-P神经元模型”. 在这个模型中，神经元接收到来自$n$个其他神经元传递过来的输入信号，这些输入信号通过带权重的连接进行传递，神经元接收到的总输入值将于神经元的阈值进行比较，然后通过激活函数处理以产生神经元的输出。
 
-<img src='https://docs-xy.oss-cn-shanghai.aliyuncs.com/M-P.png' width='50%'>
+<!-- <img src='https://docs-xy.oss-cn-shanghai.aliyuncs.com/M-P.png' width='50%'> -->
 
 > 对数几率函数是Sigmoid函数的典型代表，把可能在较大范围内变化的输入值挤压到(0,1)输出值范围内，因此有时也称为“挤压函数”(spuashing function)
 
