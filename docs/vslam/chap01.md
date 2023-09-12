@@ -15,6 +15,7 @@ OpenCV是一款广泛使用的计算机视觉库，其中包含相机内参标�
 6. 通过calibrateCamera函数由理想坐标和实际图像坐标进行标定，可得到标定结果
 7. 由projectPoints函数计算反向投影误差
 
+## 代码
 
 完整代码&注释：
 ```python
@@ -114,7 +115,7 @@ for image in images:
 cv2.destroyAllWindows()
 ```
 
-### 代码运行结果
+## 代码运行结果
 
 原始图像
 
