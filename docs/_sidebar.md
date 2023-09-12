@@ -29,3 +29,4 @@
     * [第六章](/melon/melon_chap6.md)
 * [第50期视觉SLAM Smoothly-vslam](/vslam/smoothly-vslam.md)
     * [第一章](/vslam/chap01.md)
+    * [第二章](/vslam/chap02.md)
