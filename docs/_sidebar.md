@@ -30,3 +30,4 @@
 * [第50期视觉SLAM Smoothly-vslam](/vslam/smoothly-vslam.md)
     * [第一章](/vslam/chap01.md)
     * [第二章](/vslam/chap02.md)
+    * [第三章](/vslam/chap03.md)

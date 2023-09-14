@@ -7,6 +7,7 @@
 ## 相机内参标定
 
 OpenCV是一款广泛使用的计算机视觉库，其中包含相机内参标定的相关函数。在OpenCV中，使用calibrateCamera函数进行相机内参标定，该函数使用棋盘格等标定板，通过对标定板拍摄的多幅图像进行处理，得出相机的内参参数。OpenCV还提供了相关的可视化工具，如drawChessboardCorners函数，用于显示标定板的角点，以及projectPoints函数，用于将3D点投影到2D图像平面上。
+
 1. 循环读取图片
 2. 使用findChessboardCorners函数检测角点（需提前输入角点数）
 3. 使用find4QuadCornerSubpix函数对角点进行亚像素精确化
