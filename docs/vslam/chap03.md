@@ -16,6 +16,7 @@ Mahony姿态解算算法笔记: https://www.cnblogs.com/WangHongxi/p/12357230.ht
 > 笔记暂略 待后补 
 > 
 
+代码与注释：参考官方教程文档地址
 ```python
 import numpy as np
 from scipy.spatial.transform import Rotation
