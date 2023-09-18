@@ -32,3 +32,5 @@
     * [第二章](/vslam/chap02.md)
     * [第三章](/vslam/chap03.md)
     * [第四章](/vslam/chap04.md)
+    * [第五章](/vslam/chap05.md)
+
