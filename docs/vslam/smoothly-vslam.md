@@ -18,4 +18,5 @@ Github项目地址: https://github.com/datawhalechina/smoothly-vslam
 * [第四章](/vslam/chap04.md)
 * [第五章](/vslam/chap05.md)
 * [第六章](/vslam/chap06.md)
+* [第七章](/vslam/chap07.md)
 
