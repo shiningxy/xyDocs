@@ -36,4 +36,5 @@
     * [第六章](/vslam/chap06.md)
     * [第七章](/vslam/chap07.md)
     * [第八章](/vslam/chap08.md)
+    * [第九章](/vslam/chap09.md)
 

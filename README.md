@@ -17,6 +17,8 @@ https://www.aishipping.cn
     * [第六章](/vslam/chap06.md)
     * [第七章](/vslam/chap07.md)
     * [第八章](/vslam/chap08.md)
+    * [第九章](/vslam/chap09.md)
+
 * [第46期吃瓜教程 202302 西瓜书](/melon/README.md)
     * [第一章](/melon/melon_chap1.md)
     * [第二章](/melon/melon_chap2.md)
