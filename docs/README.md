@@ -44,5 +44,5 @@
 * [面试题总结](/interview/interview.md)
     * [数据库](/interview/database/sql.html)
         * [SQL](/interview/database/sql.html)
-    * [算法](/interview/database/sql.html)
+    * [算法](/interview/database/intro.html)
         * [算法题介绍](/interview/algo/intro.html)

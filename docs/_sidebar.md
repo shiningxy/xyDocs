@@ -37,9 +37,10 @@
     * [第七章](/vslam/chap07.md)
     * [第八章](/vslam/chap08.md)
     * [第九章](/vslam/chap09.md)
+    
 * [面试题总结](/interview/interview.md)
     * [数据库](/interview/database/sql.html)
         * [SQL](/interview/database/sql.html)
-    * [算法](/interview/database/sql.html)
+    * [算法](/interview/database/intro.html)
         * [算法题介绍](/interview/algo/intro.html)
 
