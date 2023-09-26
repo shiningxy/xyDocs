@@ -46,9 +46,9 @@ https://www.aishipping.cn
     * [第五章](/rl/rl_task05.md)
     * [第六章](/rl/rl_task06.md)
 
-* [面试题总结]
-    * [数据库](docs\interview\database\sql.html)
-        * [SQL](docs\interview\database\sql.html)
-        * [SQL MD](docs\interview\database\sql.md)
-    * [算法](docs\interview\database\sql.html)
-        * [算法简介](docs\interview\algo\algo1.md)
+* [面试题总结](/interview/interview.md)
+    * [数据库](/interview/database/sql.html)
+        * [SQL](/interview/database/sql.html)
+        * [SQL MD](/interview/database/sql.md)
+    * [算法](/interview/database/sql.html)
+        * [算法简介](/interview/algo/algo1.md)
